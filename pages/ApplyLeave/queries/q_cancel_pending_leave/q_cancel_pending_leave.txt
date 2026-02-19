@@ -1,0 +1,7 @@
+UPDATE leave_requests
+SET status = 'CANCELLED',
+    updated_at = now()
+WHERE request_id = {{ tb_pending_leaves.selectedRow.request_id }}
+  AND emp_id = {{ appsmith.store.emp_id }}
+  AND status = 'PENDING'
+RETURNING request_id;

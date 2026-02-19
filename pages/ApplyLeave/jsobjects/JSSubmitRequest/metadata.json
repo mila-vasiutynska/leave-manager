@@ -1,0 +1,11 @@
+{
+  "gitSyncId": "69952b18302bdb353697bdd7_0f49ac56-24bf-4cef-b29a-da2aee96742a",
+  "id": "ApplyLeave_JSSubmitRequest",
+  "unpublishedCollection": {
+    "name": "JSSubmitRequest",
+    "pageId": "ApplyLeave",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "variables": []
+  }
+}

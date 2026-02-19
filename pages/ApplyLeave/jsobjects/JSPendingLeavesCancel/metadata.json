@@ -1,0 +1,11 @@
+{
+  "gitSyncId": "69952b18302bdb353697bdd7_838d6687-0a86-4d98-910a-47c76cfd43eb",
+  "id": "ApplyLeave_JSPendingLeavesCancel",
+  "unpublishedCollection": {
+    "name": "JSPendingLeavesCancel",
+    "pageId": "ApplyLeave",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "variables": []
+  }
+}

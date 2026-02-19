@@ -1,0 +1,11 @@
+{
+  "gitSyncId": "69952b18302bdb353697bdd7_36597535-2254-461d-bfc3-3711f609b44b",
+  "id": "Dashboard_redirectToLogin",
+  "unpublishedCollection": {
+    "name": "redirectToLogin",
+    "pageId": "Dashboard",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "variables": []
+  }
+}

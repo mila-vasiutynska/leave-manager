@@ -1,0 +1,5 @@
+ALTER TABLE leave_requests
+ALTER COLUMN created_at SET DEFAULT now();
+
+ALTER TABLE leave_requests
+ALTER COLUMN updated_at SET DEFAULT now();

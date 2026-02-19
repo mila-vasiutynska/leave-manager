@@ -1,0 +1,3 @@
+update leave_requests
+set total_hours = (end_date - start_date + 1) * hours_per_day
+where total_hours is null;

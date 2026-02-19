@@ -1,0 +1,3 @@
+select annual_hours, sick_hours
+from leave_balances
+where emp_id = {{appsmith.store.emp_id}};

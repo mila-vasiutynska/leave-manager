@@ -1,0 +1,11 @@
+{
+  "gitSyncId": "69952b18302bdb353697bdd7_2c47c2fa-5849-4e23-b70a-337bac88e213",
+  "id": "Login_JSOnFailure",
+  "unpublishedCollection": {
+    "name": "JSOnFailure",
+    "pageId": "Login",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "variables": []
+  }
+}

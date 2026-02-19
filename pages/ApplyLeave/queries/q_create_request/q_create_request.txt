@@ -1,0 +1,32 @@
+INSERT INTO leave_requests(
+	emp_id,
+	start_date,
+	end_date,
+	leave_type,
+	total_hours,
+	status,
+	created_at,
+	hours_per_day
+)
+SELECT
+  {{ appsmith.store.emp_id }},
+  ({{ dp_start.selectedDate }}::timestamptz AT TIME ZONE 'Australia/Melbourne')::date,
+  ({{ dp_end.selectedDate }}::timestamptz   AT TIME ZONE 'Australia/Melbourne')::date,
+  {{ sel_leave_type.selectedOptionValue }},
+  {{ Number(inp_hours.text) }},
+  'PENDING',
+  now(),
+  8
+WHERE NOT EXISTS (
+	SELECT 1
+	FROM leave_requests r
+	WHERE r.emp_id = {{ appsmith.store.emp_id }}
+	AND r.status IN ('PENDING', 'APPROVED')
+	AND daterange(r.start_date, r.end_date + 1, '[)') &&
+	daterange(
+		({{ dp_start.selectedDate }}::timestamptz AT TIME ZONE 'Australia/Melbourne')::date,
+		((({{ dp_end.selectedDate }}::timestamptz AT TIME ZONE 'Australia/Melbourne')::date) + 1),
+		'[)'
+	)
+)
+RETURNING request_id;

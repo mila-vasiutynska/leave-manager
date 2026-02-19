@@ -1,0 +1,3 @@
+delete from leave_requests
+where leave_type is null
+   or leave_type = '';

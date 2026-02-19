@@ -1,0 +1,63 @@
+{
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 46,
+  "boxShadow": "none",
+  "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+  "buttonVariant": "PRIMARY",
+  "disabledWhenInvalid": "true",
+  "dynamicBindingPathList": [
+    {
+      "key": "buttonColor"
+    },
+    {
+      "key": "borderRadius"
+    },
+    {
+      "key": "isDisabled"
+    }
+  ],
+  "dynamicPropertyPathList": [
+    {
+      "key": "disabledWhenInvalid"
+    },
+    {
+      "key": "isDisabled"
+    }
+  ],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onClick"
+    }
+  ],
+  "isDefaultClickDisabled": true,
+  "isDisabled": "{{ !sel_leave_type.selectedOptionValue ||\n  !dp_start.selectedDate ||\n  !dp_end.selectedDate ||\n  moment(dp_end.selectedDate).isBefore(moment(dp_start.selectedDate), \"day\")\n}}",
+  "isLoading": false,
+  "isVisible": true,
+  "key": "0jn4ej419z",
+  "leftColumn": 7,
+  "minWidth": 120,
+  "mobileBottomRow": 40,
+  "mobileLeftColumn": 7,
+  "mobileRightColumn": 23,
+  "mobileTopRow": 36,
+  "needsErrorInfo": false,
+  "onClick": "{{JSValidateLeave.b_submit_leaveonClick();\nq_create_request.run().then(() => {\n  JSSubmitRequest.b_submit_leaveonClick();\n}).catch(() => {\n  showAlert('Something went wrong. Please, try again later.', 'error');\n});}}",
+  "originalBottomRow": 46,
+  "originalTopRow": 42,
+  "parentColumnSpace": 6.84375,
+  "parentId": "0",
+  "parentRowSpace": 10,
+  "placement": "CENTER",
+  "recaptchaType": "V3",
+  "renderMode": "CANVAS",
+  "resetFormOnClick": false,
+  "responsiveBehavior": "hug",
+  "rightColumn": 23,
+  "text": "Submit",
+  "topRow": 42,
+  "type": "BUTTON_WIDGET",
+  "version": 1,
+  "widgetId": "ci31tfn5xc",
+  "widgetName": "b_submit_leave"
+}

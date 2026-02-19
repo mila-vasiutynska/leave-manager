@@ -1,0 +1,5 @@
+select emp_id
+from employees
+where username = {{inp_username.text}}
+  and pin = {{inp_pin.text}}
+limit 1;

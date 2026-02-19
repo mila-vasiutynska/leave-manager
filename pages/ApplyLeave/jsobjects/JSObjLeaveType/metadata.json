@@ -1,0 +1,16 @@
+{
+  "gitSyncId": "69952b18302bdb353697bdd7_a237bd1b-8025-441f-a87a-1e24d70bcba3",
+  "id": "ApplyLeave_JSObjLeaveType",
+  "unpublishedCollection": {
+    "name": "JSObjLeaveType",
+    "pageId": "ApplyLeave",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "variables": [
+      {
+        "name": "leaveTypes",
+        "value": "[{\n  name: \"Annual Leave\",\n  code: \"ANNUAL\"\n}, {\n  name: \"Sick Leave\",\n  code: \"SICK\"\n}]"
+      }
+    ]
+  }
+}

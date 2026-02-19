@@ -1,0 +1,10 @@
+SELECT
+  request_id,
+  to_char(start_date, 'YYYY-MM-DD') AS date_start,
+  to_char(end_date,   'YYYY-MM-DD') AS date_end,
+  leave_type,
+  total_hours AS hours
+FROM leave_requests
+WHERE emp_id = {{ appsmith.store.emp_id }}
+  AND status = 'PENDING'
+ORDER BY start_date DESC;

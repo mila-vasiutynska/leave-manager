@@ -1,0 +1,2 @@
+alter table leave_requests
+add column if not exists hours_per_day numeric not null default 8;

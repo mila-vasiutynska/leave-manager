@@ -1,0 +1,9 @@
+select
+  leave_type,
+  coalesce(sum((end_date::date - start_date::date + 1) * hours_per_day), 0) as pending_hours
+from leave_requests
+where emp_id = {{appsmith.store.emp_id}}
+  and status = 'PENDING'
+  and leave_type is not null
+  and leave_type <> ''
+group by leave_type;

@@ -1,0 +1,13 @@
+SELECT
+  request_id,
+  emp_id,
+  start_date,
+  end_date,
+  leave_type,
+  total_hours,
+  approved_by,
+  approved_at
+FROM leave_requests
+WHERE status = 'APPROVED'
+  AND (end_date::date) >= (now() AT TIME ZONE 'Australia/Melbourne')::date
+ORDER BY start_date ASC, emp_id;
