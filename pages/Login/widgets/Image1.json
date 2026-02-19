@@ -13,7 +13,7 @@
   "enableDownload": false,
   "enableRotation": false,
   "flexVerticalAlignment": "start",
-  "image": "https://raw.githubusercontent.com/mila-vasiutynska/leave-manager/master/pages/Login/Jenera.png",
+  "image": "https://github.com/mila-vasiutynska/images/blob/main/Jenera.png?raw=true",
   "imageShape": "RECTANGLE",
   "isLoading": false,
   "isVisible": true,
