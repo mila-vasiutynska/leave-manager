@@ -5,7 +5,7 @@
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "select emp_id\nfrom employees\nwhere username = {{inp_username.text}}\n  and pin = {{inp_pin.text}}\nlimit 1;",
+      "body": "SELECT \n  emp_id,\n  first_name,\n  last_name,\n  role\nFROM employees\nWHERE username = {{inp_username.text}}\n  AND pin =  {{inp_pin.text}}\nLIMIT 1;",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [

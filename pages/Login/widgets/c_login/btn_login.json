@@ -31,7 +31,7 @@
   "mobileRightColumn": 39,
   "mobileTopRow": 33,
   "needsErrorInfo": false,
-  "onClick": "{{q_login.run().then(() => {\n  JSOnSuccess.btn_loginonClick();\n}).catch(() => {\n  JSOnFailure.btn_loginonClick();\n});}}",
+  "onClick": "{{JSOnLoginClick.process_login();}}",
   "originalBottomRow": 27,
   "originalTopRow": 23,
   "parentColumnSpace": 6.84375,

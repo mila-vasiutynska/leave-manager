@@ -43,7 +43,7 @@
   "responsiveBehavior": "fill",
   "rightColumn": 57,
   "shouldTruncate": false,
-  "text": "{{\n  ( moment(dp_end.selectedDate).diff(   moment(dp_start.selectedDate),\n      \"days\"\n    ) + 1\n  ) * 8\n}}",
+  "text": "{{\n  ( moment(dp_end.selectedDate).diff(   moment(dp_start.selectedDate),\n      \"days\"\n    ) + 1\n  ) * 8 || 0\n}}",
   "textAlign": "LEFT",
   "textColor": "#231F20",
   "topRow": 36,

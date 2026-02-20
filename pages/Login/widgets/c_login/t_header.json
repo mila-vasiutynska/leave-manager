@@ -11,9 +11,6 @@
     },
     {
       "key": "borderRadius"
-    },
-    {
-      "key": "text"
     }
   ],
   "dynamicHeight": "AUTO_HEIGHT",
@@ -43,7 +40,7 @@
   "responsiveBehavior": "fill",
   "rightColumn": 58,
   "shouldTruncate": false,
-  "text": "Hello {{appsmith.user.name || appsmith.user.email}}, please, login to apply for a leave",
+  "text": "Hello there, please, login to review or apply for a leave",
   "textAlign": "LEFT",
   "textColor": "#71717a",
   "topRow": 2,
@@ -51,5 +48,5 @@
   "type": "TEXT_WIDGET",
   "version": 1,
   "widgetId": "vk3xunso8d",
-  "widgetName": "Text1"
+  "widgetName": "t_header"
 }
