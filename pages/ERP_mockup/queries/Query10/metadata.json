@@ -1,11 +1,11 @@
 {
-  "gitSyncId": "69952b18302bdb353697bdd7_de0c1b4c-9397-4c3c-8ee2-c76fcb6981e3",
-  "id": "ERP_mockup_Query7",
+  "gitSyncId": "69952b18302bdb353697bdd7_f2ef27c9-e03b-414c-af73-1dadd5c19870",
+  "id": "ERP_mockup_Query10",
   "pluginId": "postgres-plugin",
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "ALTER TABLE leave_requests\nADD COLUMN manager_comment TEXT;",
+      "body": "ALTER TABLE employees\nADD COLUMN role TEXT;\n",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [
@@ -23,7 +23,7 @@
       "pluginId": "postgres-plugin"
     },
     "dynamicBindingPathList": [],
-    "name": "Query7",
+    "name": "Query10",
     "pageId": "ERP_mockup",
     "runBehaviour": "MANUAL",
     "userSetOnLoad": false

@@ -5,7 +5,7 @@
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "ALTER TABLE leave_requests\nALTER COLUMN created_at SET DEFAULT now();\n\nALTER TABLE leave_requests\nALTER COLUMN updated_at SET DEFAULT now();",
+      "body": "ALTER TABLE leave_requests\nALTER COLUMN created_at SET DEFAULT now();\n\nALTER TABLE leave_requests\nALTER COLUMN updated_at SET DEFAULT now();\n\n",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [
