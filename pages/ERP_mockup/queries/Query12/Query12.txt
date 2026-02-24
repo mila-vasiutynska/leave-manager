@@ -1,0 +1,1 @@
+SELECT * FROM public."leave_requests" LIMIT 10;
